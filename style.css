@@ -11,7 +11,7 @@ form {
     padding: 2rem;
 }
 
-input,
+input:not([type="checkbox"]),
 textarea,
 select {
     width: 100%;
@@ -26,4 +26,10 @@ textarea:focus,
 select:focus {
     border-color: #d4af37;
     outline: none;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
